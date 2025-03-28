@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatchPoint/LogOut</title>
+    <title>MatchPoint</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -13,17 +13,8 @@
     <main>
         <div class="cajaBlanca">
             <form>
-                <legend>Registrarse</legend>
+                <legend>Iniciar sesión</legend>
                 <fieldset class="Fieldset">
-                    <div class="br">
-                        <label for="Rol">¿Quién eres?</label>
-                        <select class="Select" name="Rol" id="TipoUsuario">
-                            <option value="" disabled selected>Seleccione una opción</option>
-                            <option value="Alumno">Alumno</option>
-                            <option value="Empresa">Empresa</option>
-                            <option value="Instituto">Instituto</option>
-                        </select>                    
-                    </div>
                     <div class="br">
                         <label for="Nombre">Nombre</label>
                         <input class="Input" id="Nombre">
@@ -32,12 +23,17 @@
                         <label for="Contraseña">Contraseña</label>
                         <input class="Input" id="Contraseña">
                     </div>
-                    <div>
-                        <p class="txtPeq">Al hacer clic en «Aceptar y unirse», aceptas las Condiciones de uso, 
-                            la Política de privacidad y la Política de cookies de MatchPoint.</p>
+                    <div class="br">
+                        <label for="Rol">¿Quién eres?</label>
+                        <select class="Select" name="Rol" id="TipoUsuario">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Alumno">Alumno</option>
+                            <option value="Alumno">Empresa</option>
+                            <option value="Alumno">Instituto</option>
+                        </select>                    
                     </div>
                     <div>
-                        <button class="botonIS">Aceptar y unirse</button>
+                        <button class="botonIS">Iniciar sesión</button>
                     </div>
                     <div class="txtRegistrate">
                         <p>¿Aún no tienes cuenta? <a class="link" href="">Regístrate aquí</a></p>
