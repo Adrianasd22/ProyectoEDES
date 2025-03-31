@@ -192,3 +192,26 @@ body{
     margin-right: 30%;
 }
 
+.SelectIdiom{
+    border-radius: 10px;
+    padding: 3px;
+    border: 0.5px #7fa7a5, solid;
+}
+
+
+.botonAddLeng{
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    background-color: #34908C;
+    font-weight: bold;
+    color: white;
+}
+
+.botonAddLeng:hover{
+    background-color:#63a5a1;
+    transition: 0.4s, ease;
+}
+
