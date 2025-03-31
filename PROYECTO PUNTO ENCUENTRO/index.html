@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatchPoint/Index</title>
+    <title>MatchPoint/LogOut</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -11,14 +11,42 @@
         <h1>Hola</h1>
     </header>
     <main>
-        <h2 class="h2-index">¡Te damos la bienvenida a MatchPoint!</h2>
-
-        <img src="Images/imagen.png" alt="Imagen" class="img-Index">
-
-        <div class="botones-index">
-            <a class="botonIS" href="formularioLogIn.html">Iniciar sesión</a>
-            <a class="botonIS" href="formularioLogOut.html">Registrarse</a>
+        <div class="cajaBlanca">
+            <form>
+                <legend>Registrarse</legend>
+                <fieldset class="Fieldset">
+                    <div class="br">
+                        <label for="Rol">¿Quién eres?</label>
+                        <select class="Select" name="Rol" id="TipoUsuario">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Alumno">Alumno</option>
+                            <option value="Empresa">Empresa</option>
+                            <option value="Instituto">Instituto</option>
+                        </select>                    
+                    </div>
+                    <div class="br">
+                        <label for="Nombre">Nombre</label>
+                        <input class="Input" id="Nombre">
+                    </div>
+                    <div class="br">
+                        <label for="Contraseña">Contraseña</label>
+                        <input class="Input" id="Contraseña">
+                    </div>
+                    <div>
+                        <p class="txtPeq">Al hacer clic en «Aceptar y unirse», aceptas las Condiciones de uso, 
+                            la Política de privacidad y la Política de cookies de MatchPoint.</p>
+                    </div>
+                    <div>
+                        <button class="botonIS">Aceptar y unirse</button>
+                    </div>
+                    <div class="txtRegistrate">
+                        <p>¿Aún no tienes cuenta? <a class="link" href="">Regístrate aquí</a></p>
+                    </div>
+                    
+                </fieldset>
+            </form>
         </div>
+        
     </main>
 </body>
 </html>
