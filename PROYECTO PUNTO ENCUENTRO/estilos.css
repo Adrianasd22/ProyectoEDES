@@ -179,3 +179,14 @@ body{
     padding: 5px;
     margin-top: 5px;
 }
+
+#idiomaListaDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.IdiomaParr{
+    color: #333;
+    
+}
