@@ -181,13 +181,15 @@ body{
     margin-top: 5px;
 }
 
-#idiomaListaDiv{
+.idiomaListaDiv{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20%;
+    margin-bottom: 5px;
 }
 
 .IdiomaParr{
     color: #333;
-    
+    margin-right: 30%;
 }
+
