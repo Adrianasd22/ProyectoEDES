@@ -3,16 +3,133 @@
     padding: 0;
 }
 
-header{
-    background-color: #34908C;
+/*VARIABLES COLORES*/
+:root{
+    --colorAzul:  #339999;
+    --colorAzulSec:  #D7EEEF;
+    --colorBlanco: #FFF;
+    --colorGris:  #DBDBDB;
 }
-body{
-    background-color: #DBDBDB;
+
+
+body {
     font-family: sans-serif;
+    margin: 0;
+    background: var(--colorGris);
     color: #34908C;
     justify-content: center;
     text-align: center;
 }
+
+header {
+    background: var(--colorAzul);
+    color: white;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    align-items: center;
+    padding: 10px;
+}
+
+.icono{
+    width: 70px;
+    height: 70px;
+}
+
+.Intro{
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+button {
+    background: #e0f0ff;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.foto-perfil {
+    background: #c8f0f0;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    line-height: 100px;
+    margin: 10px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+    background: #e6f7f7;
+    border-bottom: 1px solid #ccc;
+}
+
+.estado {
+    background: #bfffbf;
+    padding: 3px 8px;
+    border-radius: 8px;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.cv, .cv-upload {
+    margin-top: 15px;
+}
+
+
+
+
+
+/*Header*/
+
+.header{
+    position: relative;
+    display: flex;
+    min-height: 7vh;
+    justify-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.header-icono{
+    position: absolute;
+    left: 10px;
+}
+
+
+.header-nav{
+    position: absolute;
+    right: 10px;
+}
+.header-nav span{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*Index*/
 .h2-index {

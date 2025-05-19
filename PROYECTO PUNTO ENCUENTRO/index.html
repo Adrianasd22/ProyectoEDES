@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatchPoint/LogOut</title>
+    <title>MatchPoint - Inicio</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" /> <!--Icono casa-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" /><!--Icono lupa-->
@@ -11,45 +11,24 @@
 </head>
 <body>
     <header>
-        <h1>Hola</h1>
-    </header>
-    <main>
-        <div class="cajaBlanca">
-            <form>
-                <legend>Registrarse</legend>
-                <fieldset class="Fieldset">
-                    <div class="br">
-                        <label for="Rol">¿Quién eres?</label>
-                        <select class="Select" name="Rol" id="TipoUsuario">
-                            <option value="" disabled selected>Seleccione una opción</option>
-                            <option value="Alumno">Alumno</option>
-                            <option value="Empresa">Empresa</option>
-                            <option value="Instituto">Instituto</option>
-                        </select>                    
-                    </div>
-                    <div class="br">
-                        <label for="Nombre">Nombre</label>
-                        <input class="Input" id="Nombre">
-                    </div>
-                    <div class="br">
-                        <label for="Contraseña">Contraseña</label>
-                        <input class="Input" id="Contraseña">
-                    </div>
-                    <div>
-                        <p class="txtPeq">Al hacer clic en «Aceptar y unirse», aceptas las Condiciones de uso, 
-                            la Política de privacidad y la Política de cookies de MatchPoint.</p>
-                    </div>
-                    <div>
-                        <button class="botonIS">Aceptar y unirse</button>
-                    </div>
-                    <div class="txtRegistrate">
-                        <p>¿Aún no tienes cuenta? <a class="link" href="">Regístrate aquí</a></p>
-                    </div>
-                    
-                </fieldset>
-            </form>
+        <div class="header"> 
+            <div class="header-icono">
+                <img style="height: 70px;" class="" src="Images/MPTransparente.png" alt="iconoMP">
+            </div>
+            <nav class="header-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                <span class="material-symbols-outlined">person</span>
+            </nav>
         </div>
-        
+    </header>
+    <main class="inicio">
+        <h1>¡Te damos la bienvenida a MatchPoint!</h1>
+        <p class="Intro">Aquí encontrarás tanto a institutos como a alumnos.</p>
+        <div class="botones">
+            <button>Iniciar sesión</button>
+            <button>Registrarse</button>
+        </div>
     </main>
 </body>
 </html>
