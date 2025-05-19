@@ -4,15 +4,24 @@ const SelectIdiomas = document.getElementById("IdiomasSelect");
 const idiomaListaDiv = document.getElementById("idiomaListaDiv");
 
 
+const botonRe = document.getElementById("botonRe");
 const botonIS = document.getElementById("botonISe");
-botonIS.addEventListener("click", function(event){
-    window.location.assign('../index.html');
-});
 
 
-botonAñadeIdiomas.addEventListener("click", function(event){
-
-    //Gracias a esto lo que creemos se quede todo el rato
+if (botonIS) {
+    botonIS.addEventListener("click", function(event) {
+        event.preventDefault();
+        window.location.assign('../index.html');
+    });
+}
+if (botonRe) {
+    botonRe.addEventListener("click", function(event) {
+        event.preventDefault();
+        window.location.assign('../index.html');
+    });
+}
+if (botonAñadeIdiomas) {
+    botonAñadeIdiomas.addEventListener("click", function(event) {
     event.preventDefault();
     //Cogemos que es lo que se ha seleccionado en el select
     const idiomaSeleccionado = document.getElementById("IdiomasSelect").value;
@@ -33,4 +42,8 @@ botonAñadeIdiomas.addEventListener("click", function(event){
     createParr2.classList.add("IdiomaParr");
     createParr2.textContent = nivelIdiomaSeleccionado;
 
-})
+    });
+}
+
+
+
