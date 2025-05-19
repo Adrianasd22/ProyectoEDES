@@ -4,6 +4,11 @@ const SelectIdiomas = document.getElementById("IdiomasSelect");
 const idiomaListaDiv = document.getElementById("idiomaListaDiv");
 
 
+const botonIS = document.getElementById("botonISe");
+botonIS.addEventListener("click", function(event){
+    window.location.assign('../index.html');
+});
+
 
 botonAñadeIdiomas.addEventListener("click", function(event){
 

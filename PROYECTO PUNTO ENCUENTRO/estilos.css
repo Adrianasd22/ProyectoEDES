@@ -36,10 +36,11 @@ header {
 .header{
     position: relative;
     display: flex;
-    min-height: 7vh;
+    min-height: 3vh;
     justify-items: center;
     text-align: center;
     padding: 5px;
+    align-items: center;
 }
 
 .header-icono{
@@ -51,7 +52,19 @@ header {
 .header-nav{
     position: absolute;
     right: 10px;
+    display: flex;
+    gap: 10px;
 }
+
+.header-nav svg:hover{
+    fill: var(--colorAzulSec);
+    background-color: rgba(211, 211, 211, 0.3);
+    border-radius: 20px;
+    height: 26px;
+    width: 26px;
+    transition: all 300ms ease-in-out;
+}
+
 .header-nav span{
     color: white;
 }
@@ -61,6 +74,8 @@ header {
     height: 70px;
 }
 /*Fin Header*/
+
+
 
 .Intro{
     font-size: 15px;
